@@ -14,6 +14,7 @@ CUDA_VISIBLE_DEVICES=0 python train_2d.py \
   -dataset Micro2D \
   -data_path {data_path} \
   -sam_ckpt pretrain.pt
+```
 
 ### 3D Segmentation
 ```bash
@@ -28,6 +29,7 @@ CUDA_VISIBLE_DEVICES=0 python train_3d.py \
   -dataset btcv \
   -data_path {data_path} \
   -sam_ckpt pretrain.pt
+```
 
 ### Deblurring / Super-Resolution
 CUDA_VISIBLE_DEVICES=0 python train_restore.py \
@@ -47,6 +49,7 @@ CUDA_VISIBLE_DEVICES=0 python train_restore.py \
   --exp_name sam_diffsr_df2k4x \
   --work_dir exp/ \
   -sam_ckpt pretrain.pt
+```
 
 The dataset used for pre-training is available on Hugging Face:
 - **Name:** `Micro`  
