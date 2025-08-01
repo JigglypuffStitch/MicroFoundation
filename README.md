@@ -32,6 +32,7 @@ CUDA_VISIBLE_DEVICES=0 python train_3d.py \
 ```
 
 ### Deblurring / Super-Resolution
+```bash
 CUDA_VISIBLE_DEVICES=0 python train_restore.py \
   -net sam2 \
   -exp_name micro \
